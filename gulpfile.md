@@ -185,4 +185,4 @@ gulp.task('default', ['run']);
 
 [介绍文档](https://github.com/nimojs/gulp-book/blob/master/chapter7.md)
 
-[GoBack](http://www.baidu.com);
+[GoBack](README.md)
