@@ -68,7 +68,7 @@ gulp.task('images', function() {
 // 复制文件
 gulp.task('copy', function () {
     gulp.src(copyFiles)
-        .pipe(gulp.dest('dist/'));
+        .pipe(gulp.dest('dist'));
 });
 
 // 监测脚本变化
@@ -135,12 +135,6 @@ gulp.task('listening', function () {
     watchStyle();
     watchImages();
     watchCopy();
-});
-
-// 复制任务
-gulp.task('copy', function () {
-    gulp.src('src/fonts/**/*')
-        .pipe(gulp.dest('dist/fonts/'))
 });
 
 gulp.task('run', ['script', 'style', 'images', 'copy', 'listening']);
